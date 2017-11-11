@@ -1,0 +1,22 @@
+<html data-ng-app="app">
+  <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="app.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body ng-controller="MainCtrl" background="image.jpg">
+
+  <div style=" background-color:transparent;left: 5%; right: 5%; bottom: 5%; top: 5%; position: absolute">
+      <h1 style="color:#ff323d "> 311 Call Service Request Data Visualization </h1>
+
+    <button class="button" onclick="window.location.href='#/firstPage'">home</button>
+    <button class="button button1" onclick="window.location.href='#/secondPage'">yearly</button>
+    <button class="button button2" onclick="window.location.href='#/thirdPage'">Third Page</button>
+    <button class="button button3" onclick="window.location.href='#/fourthPage'">Fourth</button>
+
+  <div ng-view></div>
+  </div>
+  </body>
+</html>

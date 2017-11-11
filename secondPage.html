@@ -1,0 +1,67 @@
+<html>
+<style>
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        color: cyan;
+        font-weight: bold;
+
+    }
+    th, td {
+        padding: 5px;
+        text-align: right;
+
+    }
+</style>
+<body>
+<h1>Yearly data visulization</h1>
+<div>
+    <button style="background-color: cyan; cursor: pointer; font-size: 16px" data-ng-click = "myfunction()"> click to get results </button>
+    <br>
+<br>
+    <table class="dat" >
+        <tr>
+            <th>YEAR</th>
+            <th>No. of records per year</th>
+        </tr>
+        <tr>
+            <td>2007</td>
+            <td>{{mydata2007}}</td>
+        </tr>
+
+        <tr>
+            <td>2008</td>
+            <td>{{mydata2008}}</td>
+        </tr>
+
+        <tr>
+            <td>2009</td>
+            <td>{{mydata2009}}</td>
+        </tr>
+
+        <tr>
+            <td>2010</td>
+            <td>{{mydata2010}}</td>
+        </tr>
+
+        <tr>
+            <td>2011</td>
+            <td>{{mydata2011}}</td>
+        </tr>
+
+        <tr>
+            <td>2012</td>
+            <td>{{mydata2012}}</td>
+        </tr>
+    </table>
+
+
+</div>
+<br>
+
+<div id="chart_div"></div>
+
+
+</body>
+</html>
